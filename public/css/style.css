@@ -1,0 +1,26 @@
+/* Custom styles for LombokTour */
+
+/* Hamburger Button Animation */
+#mobile-menu-btn.active #bar-1 {
+    transform: translateY(0) rotate(45deg);
+}
+
+#mobile-menu-btn.active #bar-2 {
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+#mobile-menu-btn.active #bar-3 {
+    transform: translateY(0) rotate(-45deg);
+}
+
+/* Mobile Menu Animation */
+#mobile-menu.active {
+    max-height: 500px;
+    /* Adjust as needed */
+    opacity: 1;
+}
+
+#mobile-menu {
+    transition: max-height 0.3s ease-in-out, opacity 0.2s ease-in-out;
+}
